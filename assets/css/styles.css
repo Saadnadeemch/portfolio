@@ -1296,3 +1296,35 @@ body.light-theme {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+
+/* Toast message styles */
+#toastContainer {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.toast {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  color: black;
+  background: white; /* main container white */
+  border: 1px solid #ddd;
+}
+
+
+/* Error styling */
+.toast.error {
+  border-left: 6px solid #e74c3c; /* red border */
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
